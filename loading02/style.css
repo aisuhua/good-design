@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loading-bar {
+    position: fixed;
+    _position: absolute;
+    z-index: 90000;
+    top: 35%;
+    left: 50%;
+    width: 96px;
+    height: 96px;
+    margin: -48px 0 0 -48px;
+    background-color: rgba(0, 0, 0, .6);
+    *background-color: inherit;
+    border-radius: 8px
+}
+
+.loading-bar .bg {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 48px;
+    height: 48px;
+    background: url(img.png) -56px -140px no-repeat;
+    background-size: 88px;
+    *background-image: inherit;
+    *display: none
+}
+
+.loading-bar .bg.q {
+    background-position: -28px -70px;
+}
+
+.loading-bar .bg.z {
+    background-position: -28px -119px;
+    position: absolute
+}
+
+.loading-bar .q {
+    -moz-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    100% {
+        -moz-transform: rotate(359deg)
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    100% {
+        -o-transform: rotate(359deg)
+    }
+}
+
+@-ms-keyframes spin {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    100% {
+        -ms-transform: rotate(359deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.test-loading-bar {
+    width: 96px;
+    height: 96px;
+    background: #eee;
+}
+
+.test-bg {
+    width:48px;
+    height: 48px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background: url(img.png) -56px -140px no-repeat;
+    background-size: 88px;
+}
+
+.test-bg.test-q {
+    background-position: -28px -70px;
+}
+
+.test-bg.test-z {
+    background-position: -28px -119px;
+}
+
+.test-q {
+    -moz-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear
+}
